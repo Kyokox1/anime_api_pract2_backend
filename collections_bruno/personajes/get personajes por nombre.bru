@@ -1,0 +1,15 @@
+meta {
+  name: get personajes por nombre
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{url}}/api/personajes?nombre=Naru
+  body: none
+  auth: inherit
+}
+
+params:query {
+  nombre: Naru
+}

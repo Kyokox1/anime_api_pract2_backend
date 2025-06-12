@@ -1,0 +1,21 @@
+meta {
+  name: add anime
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{url}}/api/animes
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre":"Houseki no Kuni",
+    "sinopsis":"Una joya de anime",
+    "año":2010,
+    "genero":"accion drama",
+    "estado":"finalizado"//solo puede ser "finalizado", "emision","proximamente"
+  }
+}

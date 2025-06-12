@@ -1,0 +1,21 @@
+meta {
+  name: update personaje
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{url}}/api/personajes/2
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre":"Jiraiya",
+    "descripcion":"Maestro del niño zorro huerfano, se murió",
+    "rol":"secundario",
+    "anime_id":1
+  }
+  
+}

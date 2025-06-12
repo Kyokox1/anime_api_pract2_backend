@@ -1,0 +1,15 @@
+meta {
+  name: get animes por año
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{url}}/api/animes?año=2011
+  body: none
+  auth: inherit
+}
+
+params:query {
+  año: 2011
+}

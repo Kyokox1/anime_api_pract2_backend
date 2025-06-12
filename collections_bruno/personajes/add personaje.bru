@@ -1,0 +1,21 @@
+meta {
+  name: add personaje
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{url}}/api/personajes
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre":"Naruto",
+    "descripcion":"Un niño zorro huerfano",
+    "rol":"protagonista",
+    "anime_id":1
+  }
+  
+}

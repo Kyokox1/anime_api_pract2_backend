@@ -1,0 +1,15 @@
+meta {
+  name: get personajes por rol
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{url}}/api/personajes?rol=secundario
+  body: none
+  auth: inherit
+}
+
+params:query {
+  rol: secundario
+}

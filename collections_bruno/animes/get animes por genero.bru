@@ -1,0 +1,15 @@
+meta {
+  name: get animes por genero
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{url}}/api/animes?genero=accion
+  body: none
+  auth: inherit
+}
+
+params:query {
+  genero: accion
+}

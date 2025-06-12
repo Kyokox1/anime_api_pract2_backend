@@ -1,0 +1,22 @@
+meta {
+  name: update anime
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{url}}/api/animes/3
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre":"Hunter x Hunter 2011",
+    "sinopsis":"El mejor shonen jamás creado",
+    "año":2011,
+    "genero":"accion drama",
+    "estado":"proximamente"
+    //el estado solo acepta ser "finalizado", "emision","proximamente"
+  }
+}
